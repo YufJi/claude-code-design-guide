@@ -54,8 +54,6 @@ This type system design is important: **A single AssistantMessage can contain mu
 
 The Claude API returns Server-Sent Events (SSE) streams. Streaming parsing architecture:
 
-![Streaming Response Parsing Flow — Text blocks output in real-time, tool call blocks accumulated then executed](../diagrams/query-engine-flow-en.svg)
-
 The streaming parsing in `query.ts` roughly looks like this:
 
 ```typescript

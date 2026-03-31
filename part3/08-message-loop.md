@@ -54,8 +54,6 @@ type ContentBlock =
 
 Claude API 返回的是 Server-Sent Events（SSE）流。流式解析架构：
 
-![流式响应解析流程 — 文本块实时输出，工具调用块累积后执行](../diagrams/query-engine-flow.svg)
-
 `query.ts` 中的流式解析大致如下：
 
 ```typescript

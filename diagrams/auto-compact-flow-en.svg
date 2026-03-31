@@ -1,129 +1,60 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="840" height="520" viewBox="0 0 840 520">
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="540" viewBox="0 0 840 540">
   <defs>
-    <marker id="arr-3b82f6" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
-          <polygon points="0 0,10 3.5,0 7" fill="#3b82f6"/>
-        </marker>
-    <marker id="arr-059669" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
-          <polygon points="0 0,10 3.5,0 7" fill="#059669"/>
-        </marker>
-    <marker id="arr-f59e0b" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
-          <polygon points="0 0,10 3.5,0 7" fill="#f59e0b"/>
-        </marker>
-    <marker id="arr-dc2626" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
-          <polygon points="0 0,10 3.5,0 7" fill="#dc2626"/>
-        </marker>
-    <marker id="arr-9333ea" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
-          <polygon points="0 0,10 3.5,0 7" fill="#9333ea"/>
-        </marker>
-    <marker id="arr-1e40af" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
-          <polygon points="0 0,10 3.5,0 7" fill="#1e40af"/>
-        </marker>
-    <marker id="arr-374151" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
-          <polygon points="0 0,10 3.5,0 7" fill="#374151"/>
-        </marker>
-    <marker id="arr-94a3b8" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
-          <polygon points="0 0,10 3.5,0 7" fill="#94a3b8"/>
-        </marker>
+    <marker id="arr-blue" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0,10 3.5,0 7" fill="#3b82f6"/>
+    </marker>
+    <marker id="arr-orange" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0,10 3.5,0 7" fill="#d97706"/>
+    </marker>
+    <marker id="arr-green" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0,10 3.5,0 7" fill="#059669"/>
+    </marker>
   </defs>
-  <rect width="840" height="520" fill="white"/>
-  <text x="420" y="34"
-         font-family="'Segoe UI',system-ui,sans-serif"
-         font-size="22" font-weight="bold"
-         fill="#1e40af" text-anchor="middle"
-         dominant-baseline="middle">Auto-Compact Compression Flow</text>
-  <rect x="40" y="62" width="380" height="140" rx="10"
-       fill="#ffc9c9" stroke="#dc2626" stroke-width="2" />
-  <text x="230" y="82"
-         font-family="'Segoe UI',system-ui,sans-serif"
-         font-size="14" font-weight="600"
-         fill="#dc2626" text-anchor="middle"
-         dominant-baseline="middle">Original Message List (255K tokens)</text>
-  <text x="230" y="108.25"
-         font-family="'Segoe UI',system-ui,sans-serif"
-         font-size="13" font-weight="normal"
-         fill="#374151" text-anchor="middle"
-         dominant-baseline="middle">System prompt + 50 conversation turns +</text>
-  <text x="230" y="127.75"
-         font-family="'Segoe UI',system-ui,sans-serif"
-         font-size="13" font-weight="normal"
-         fill="#374151" text-anchor="middle"
-         dominant-baseline="middle">Large tool call results</text>
-  <text x="230" y="165"
-         font-family="'Segoe UI',system-ui,sans-serif"
-         font-size="13" font-weight="normal"
-         fill="#dc2626" text-anchor="middle"
-         dominant-baseline="middle">▲ Exceeds 85% threshold, triggers compaction</text>
-  <path d="M230,204 Q231.28153028873186,224 230,244"
-       fill="none" stroke="#d97706" stroke-width="2.5" 
-       marker-end="url(#arr-d97706)" />
-  <rect x="40" y="248" width="170" height="80" rx="8"
-       fill="#ffd8a8" stroke="#d97706" stroke-width="2" />
-  <text x="125" y="278.25"
-         font-family="'Segoe UI',system-ui,sans-serif"
-         font-size="13" font-weight="normal"
-         fill="#92400e" text-anchor="middle"
-         dominant-baseline="middle">To be compressed</text>
-  <text x="125" y="297.75"
-         font-family="'Segoe UI',system-ui,sans-serif"
-         font-size="13" font-weight="normal"
-         fill="#92400e" text-anchor="middle"
-         dominant-baseline="middle">(200K tokens)</text>
-  <rect x="250" y="248" width="170" height="80" rx="8"
-       fill="#c3fae8" stroke="#059669" stroke-width="2" />
-  <text x="335" y="278.25"
-         font-family="'Segoe UI',system-ui,sans-serif"
-         font-size="13" font-weight="normal"
-         fill="#065f46" text-anchor="middle"
-         dominant-baseline="middle">Keep recent</text>
-  <text x="335" y="297.75"
-         font-family="'Segoe UI',system-ui,sans-serif"
-         font-size="13" font-weight="normal"
-         fill="#065f46" text-anchor="middle"
-         dominant-baseline="middle">(last 10 messages)</text>
-  <path d="M125,330 Q125.26161135659288,350 125,370"
-       fill="none" stroke="#d97706" stroke-width="2.5" 
-       marker-end="url(#arr-d97706)" />
-  <rect x="40" y="374" width="170" height="60" rx="8"
-       fill="#d0bfff" stroke="#9333ea" stroke-width="2" />
-  <text x="125" y="394.25"
-         font-family="'Segoe UI',system-ui,sans-serif"
-         font-size="13" font-weight="normal"
-         fill="#6b21a8" text-anchor="middle"
-         dominant-baseline="middle">Claude generates summary</text>
-  <text x="125" y="413.75"
-         font-family="'Segoe UI',system-ui,sans-serif"
-         font-size="13" font-weight="normal"
-         fill="#6b21a8" text-anchor="middle"
-         dominant-baseline="middle">(10K tokens)</text>
-  <line x1="125" y1="436" x2="340" y2="460"
-       stroke="#3b82f6" stroke-width="2" 
-       marker-end="url(#arr-3b82f6)" />
-  <line x1="335" y1="330" x2="380" y2="460"
-       stroke="#3b82f6" stroke-width="2" 
-       marker-end="url(#arr-3b82f6)" />
-  <rect x="280" y="460" width="340" height="46" rx="10"
-       fill="#b2f2bb" stroke="#059669" stroke-width="2.5" />
-  <text x="450" y="483"
-         font-family="'Segoe UI',system-ui,sans-serif"
-         font-size="14" font-weight="600"
-         fill="#065f46" text-anchor="middle"
-         dominant-baseline="middle">Compressed Message List (60K tokens) ✓</text>
-  <rect x="470" y="62" width="340" height="120" rx="10"
-       fill="#f8fafc" stroke="#94a3b8" stroke-width="1.5" />
-  <text x="640" y="90"
-         font-family="'Segoe UI',system-ui,sans-serif"
-         font-size="15" font-weight="600"
-         fill="#374151" text-anchor="middle"
-         dominant-baseline="middle">Trigger Thresholds</text>
-  <text x="640" y="122"
-         font-family="'Segoe UI',system-ui,sans-serif"
-         font-size="14" font-weight="normal"
-         fill="#d97706" text-anchor="middle"
-         dominant-baseline="middle">85% → Show warning</text>
-  <text x="640" y="148"
-         font-family="'Segoe UI',system-ui,sans-serif"
-         font-size="14" font-weight="normal"
-         fill="#dc2626" text-anchor="middle"
-         dominant-baseline="middle">95% → Force compaction</text>
+  <rect width="840" height="540" fill="white"/>
+
+  <!-- Title -->
+  <text x="420" y="34" font-family="'Segoe UI',system-ui,sans-serif" font-size="22" font-weight="bold" fill="#1e40af" text-anchor="middle" dominant-baseline="middle">Auto-Compact Compression Flow</text>
+
+  <!-- Original message list -->
+  <rect x="40" y="58" width="380" height="130" rx="10" fill="#ffc9c9" stroke="#dc2626" stroke-width="2"/>
+  <text x="230" y="82" font-family="'Segoe UI',system-ui,sans-serif" font-size="14" font-weight="600" fill="#dc2626" text-anchor="middle" dominant-baseline="middle">Original Message List (255K tokens)</text>
+  <text x="230" y="110" font-family="'Segoe UI',system-ui,sans-serif" font-size="13" fill="#374151" text-anchor="middle" dominant-baseline="middle">System prompt + 50 conversation turns +</text>
+  <text x="230" y="130" font-family="'Segoe UI',system-ui,sans-serif" font-size="13" fill="#374151" text-anchor="middle" dominant-baseline="middle">Large tool call results</text>
+  <text x="230" y="165" font-family="'Segoe UI',system-ui,sans-serif" font-size="13" fill="#dc2626" text-anchor="middle" dominant-baseline="middle">▲ Exceeds 85% threshold, triggers compaction</text>
+
+  <!-- Threshold box -->
+  <rect x="470" y="58" width="330" height="130" rx="10" fill="#f8fafc" stroke="#94a3b8" stroke-width="1.5"/>
+  <text x="635" y="90" font-family="'Segoe UI',system-ui,sans-serif" font-size="15" font-weight="600" fill="#374151" text-anchor="middle" dominant-baseline="middle">Trigger Thresholds</text>
+  <text x="635" y="122" font-family="'Segoe UI',system-ui,sans-serif" font-size="14" fill="#d97706" text-anchor="middle" dominant-baseline="middle">85% → Show warning</text>
+  <text x="635" y="150" font-family="'Segoe UI',system-ui,sans-serif" font-size="14" fill="#dc2626" text-anchor="middle" dominant-baseline="middle">95% → Force compaction</text>
+
+  <!-- Arrow down -->
+  <line x1="230" y1="190" x2="230" y2="218" stroke="#d97706" stroke-width="2.5" marker-end="url(#arr-orange)"/>
+
+  <!-- To compress -->
+  <rect x="40" y="222" width="170" height="80" rx="8" fill="#ffd8a8" stroke="#d97706" stroke-width="2"/>
+  <text x="125" y="252" font-family="'Segoe UI',system-ui,sans-serif" font-size="13" font-weight="600" fill="#92400e" text-anchor="middle" dominant-baseline="middle">To be compressed</text>
+  <text x="125" y="276" font-family="'Segoe UI',system-ui,sans-serif" font-size="13" fill="#92400e" text-anchor="middle" dominant-baseline="middle">(200K tokens)</text>
+
+  <!-- Keep -->
+  <rect x="250" y="222" width="170" height="80" rx="8" fill="#c3fae8" stroke="#059669" stroke-width="2"/>
+  <text x="335" y="252" font-family="'Segoe UI',system-ui,sans-serif" font-size="13" font-weight="600" fill="#065f46" text-anchor="middle" dominant-baseline="middle">Keep recent</text>
+  <text x="335" y="276" font-family="'Segoe UI',system-ui,sans-serif" font-size="13" fill="#065f46" text-anchor="middle" dominant-baseline="middle">(last 10 messages)</text>
+
+  <!-- Arrow compress → summary -->
+  <line x1="125" y1="304" x2="125" y2="372" stroke="#d97706" stroke-width="2.5" marker-end="url(#arr-orange)"/>
+
+  <!-- Claude generates summary -->
+  <rect x="40" y="374" width="170" height="60" rx="8" fill="#d0bfff" stroke="#9333ea" stroke-width="2"/>
+  <text x="125" y="394" font-family="'Segoe UI',system-ui,sans-serif" font-size="13" font-weight="600" fill="#6b21a8" text-anchor="middle" dominant-baseline="middle">Claude generates summary</text>
+  <text x="125" y="414" font-family="'Segoe UI',system-ui,sans-serif" font-size="13" fill="#6b21a8" text-anchor="middle" dominant-baseline="middle">(10K tokens)</text>
+
+  <!-- Arrows to result -->
+  <line x1="125" y1="436" x2="340" y2="460" stroke="#3b82f6" stroke-width="2" marker-end="url(#arr-blue)"/>
+  <line x1="335" y1="304" x2="380" y2="460" stroke="#3b82f6" stroke-width="2" marker-end="url(#arr-blue)"/>
+
+  <!-- Result -->
+  <rect x="280" y="462" width="340" height="46" rx="10" fill="#b2f2bb" stroke="#059669" stroke-width="2.5"/>
+  <text x="450" y="485" font-family="'Segoe UI',system-ui,sans-serif" font-size="14" font-weight="600" fill="#065f46" text-anchor="middle" dominant-baseline="middle">Compressed Message List (60K tokens) ✓</text>
 </svg>

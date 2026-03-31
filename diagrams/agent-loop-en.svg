@@ -1,106 +1,57 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" width="740" height="560" viewBox="0 0 740 560">
   <defs>
-    <marker id="arr-3b82f6" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
-          <polygon points="0 0,10 3.5,0 7" fill="#3b82f6"/>
-        </marker>
-    <marker id="arr-059669" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
-          <polygon points="0 0,10 3.5,0 7" fill="#059669"/>
-        </marker>
-    <marker id="arr-f59e0b" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
-          <polygon points="0 0,10 3.5,0 7" fill="#f59e0b"/>
-        </marker>
-    <marker id="arr-dc2626" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
-          <polygon points="0 0,10 3.5,0 7" fill="#dc2626"/>
-        </marker>
-    <marker id="arr-9333ea" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
-          <polygon points="0 0,10 3.5,0 7" fill="#9333ea"/>
-        </marker>
-    <marker id="arr-1e40af" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
-          <polygon points="0 0,10 3.5,0 7" fill="#1e40af"/>
-        </marker>
-    <marker id="arr-374151" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
-          <polygon points="0 0,10 3.5,0 7" fill="#374151"/>
-        </marker>
-    <marker id="arr-94a3b8" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
-          <polygon points="0 0,10 3.5,0 7" fill="#94a3b8"/>
-        </marker>
+    <marker id="arr-blue" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0,10 3.5,0 7" fill="#3b82f6"/>
+    </marker>
+    <marker id="arr-red" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0,10 3.5,0 7" fill="#dc2626"/>
+    </marker>
   </defs>
   <rect width="740" height="560" fill="white"/>
-  <text x="370" y="34"
-         font-family="'Segoe UI',system-ui,sans-serif"
-         font-size="22" font-weight="bold"
-         fill="#1e40af" text-anchor="middle"
-         dominant-baseline="middle">Claude Code Agent Loop</text>
-  <rect x="120" y="60" width="500" height="58" rx="10"
-       fill="#a5d8ff" stroke="#1e40af" stroke-width="2.5" />
-  <text x="370" y="89"
-         font-family="'Segoe UI',system-ui,sans-serif"
-         font-size="18" font-weight="600"
-         fill="#1e40af" text-anchor="middle"
-         dominant-baseline="middle">User Input</text>
-  <path d="M370,119 Q369.8525496500854,134 370,149"
-       fill="none" stroke="#3b82f6" stroke-width="2.5" 
-       marker-end="url(#arr-3b82f6)" />
-  <rect x="120" y="153" width="500" height="58" rx="10"
-       fill="#fff3bf" stroke="#92400e" stroke-width="2" />
-  <text x="370" y="182"
-         font-family="'Segoe UI',system-ui,sans-serif"
-         font-size="16" font-weight="600"
-         fill="#92400e" text-anchor="middle"
-         dominant-baseline="middle">Build Message List (with history)</text>
-  <path d="M370,212 Q370.47071670006227,227 370,242"
-       fill="none" stroke="#3b82f6" stroke-width="2.5" 
-       marker-end="url(#arr-3b82f6)" />
-  <rect x="120" y="246" width="500" height="58" rx="10"
-       fill="#c3fae8" stroke="#059669" stroke-width="2" />
-  <text x="370" y="275"
-         font-family="'Segoe UI',system-ui,sans-serif"
-         font-size="16" font-weight="600"
-         fill="#059669" text-anchor="middle"
-         dominant-baseline="middle">Call Claude API (streaming)</text>
-  <path d="M370,305 Q369.5833518763958,320 370,335"
-       fill="none" stroke="#3b82f6" stroke-width="2.5" 
-       marker-end="url(#arr-3b82f6)" />
-  <rect x="120" y="339" width="500" height="84" rx="10"
-       fill="#dbe4ff" stroke="#3730a3" stroke-width="2" />
-  <text x="370" y="364"
-         font-family="'Segoe UI',system-ui,sans-serif"
-         font-size="16" font-weight="600"
-         fill="#3730a3" text-anchor="middle"
-         dominant-baseline="middle">Parse Response</text>
-  <text x="370" y="388"
-         font-family="'Segoe UI',system-ui,sans-serif"
-         font-size="12" font-weight="normal"
-         fill="#374151" text-anchor="middle"
-         dominant-baseline="middle">Text blocks → stream display  ·  Thinking blocks → internal  ·  Tool calls → execute</text>
-  <path d="M370,424 Q368.2534088702105,439 370,454"
-       fill="none" stroke="#3b82f6" stroke-width="2.5" 
-       marker-end="url(#arr-3b82f6)" />
-  <rect x="120" y="458" width="500" height="55" rx="10"
-       fill="#d0bfff" stroke="#9333ea" stroke-width="2" />
-  <text x="370" y="485"
-         font-family="'Segoe UI',system-ui,sans-serif"
-         font-size="15" font-weight="600"
-         fill="#6b21a8" text-anchor="middle"
-         dominant-baseline="middle">Tool results appended to message list</text>
-  <line x1="622" y1="486" x2="680" y2="420"
-       stroke="#dc2626" stroke-width="2" 
-       marker-end="url(#arr-dc2626)" />
-  <line x1="680" y1="420" x2="680" y2="275"
-       stroke="#dc2626" stroke-width="2" 
-       marker-end="url(#arr-dc2626)" />
-  <line x1="680" y1="275" x2="622" y2="275"
-       stroke="#dc2626" stroke-width="2" 
-       marker-end="url(#arr-dc2626)" />
-  <text x="700" y="350"
-         font-family="'Segoe UI',system-ui,sans-serif"
-         font-size="13" font-weight="normal"
-         fill="#dc2626" text-anchor="start"
-         dominant-baseline="middle">Continue?</text>
-  <text x="140" y="533"
-         font-family="'Segoe UI',system-ui,sans-serif"
-         font-size="13" font-weight="normal"
-         fill="#6b7280" text-anchor="start"
-         dominant-baseline="middle">← No tool calls / Turn limit reached → Return final result</text>
+
+  <!-- Title -->
+  <text x="370" y="34" font-family="'Segoe UI',system-ui,sans-serif" font-size="22" font-weight="bold" fill="#1e40af" text-anchor="middle" dominant-baseline="middle">Claude Code Agent Loop</text>
+
+  <!-- Box 1 -->
+  <rect x="120" y="58" width="500" height="58" rx="10" fill="#a5d8ff" stroke="#1e40af" stroke-width="2.5"/>
+  <text x="370" y="87" font-family="'Segoe UI',system-ui,sans-serif" font-size="18" font-weight="600" fill="#1e40af" text-anchor="middle" dominant-baseline="middle">User Input</text>
+
+  <!-- Arrow 1→2 -->
+  <line x1="370" y1="118" x2="370" y2="141" stroke="#3b82f6" stroke-width="2.5" marker-end="url(#arr-blue)"/>
+
+  <!-- Box 2 -->
+  <rect x="120" y="143" width="500" height="58" rx="10" fill="#fff3bf" stroke="#92400e" stroke-width="2"/>
+  <text x="370" y="172" font-family="'Segoe UI',system-ui,sans-serif" font-size="16" font-weight="600" fill="#92400e" text-anchor="middle" dominant-baseline="middle">Build Message List (with history)</text>
+
+  <!-- Arrow 2→3 -->
+  <line x1="370" y1="203" x2="370" y2="226" stroke="#3b82f6" stroke-width="2.5" marker-end="url(#arr-blue)"/>
+
+  <!-- Box 3 -->
+  <rect x="120" y="228" width="500" height="58" rx="10" fill="#c3fae8" stroke="#059669" stroke-width="2"/>
+  <text x="370" y="257" font-family="'Segoe UI',system-ui,sans-serif" font-size="16" font-weight="600" fill="#059669" text-anchor="middle" dominant-baseline="middle">Call Claude API (streaming)</text>
+
+  <!-- Arrow 3→4 -->
+  <line x1="370" y1="288" x2="370" y2="311" stroke="#3b82f6" stroke-width="2.5" marker-end="url(#arr-blue)"/>
+
+  <!-- Box 4 -->
+  <rect x="120" y="313" width="500" height="84" rx="10" fill="#dbe4ff" stroke="#3730a3" stroke-width="2"/>
+  <text x="370" y="346" font-family="'Segoe UI',system-ui,sans-serif" font-size="16" font-weight="600" fill="#3730a3" text-anchor="middle" dominant-baseline="middle">Parse Response</text>
+  <text x="370" y="372" font-family="'Segoe UI',system-ui,sans-serif" font-size="12" fill="#374151" text-anchor="middle" dominant-baseline="middle">Text blocks → stream display  ·  Thinking blocks → internal  ·  Tool calls → execute</text>
+
+  <!-- Arrow 4→5 -->
+  <line x1="370" y1="399" x2="370" y2="428" stroke="#3b82f6" stroke-width="2.5" marker-end="url(#arr-blue)"/>
+
+  <!-- Box 5 -->
+  <rect x="120" y="430" width="500" height="55" rx="10" fill="#d0bfff" stroke="#9333ea" stroke-width="2"/>
+  <text x="370" y="457" font-family="'Segoe UI',system-ui,sans-serif" font-size="15" font-weight="600" fill="#6b21a8" text-anchor="middle" dominant-baseline="middle">Tool results appended to message list</text>
+
+  <!-- Loop back: right side -->
+  <line x1="622" y1="457" x2="680" y2="457" stroke="#dc2626" stroke-width="2"/>
+  <line x1="680" y1="457" x2="680" y2="257" stroke="#dc2626" stroke-width="2"/>
+  <line x1="680" y1="257" x2="622" y2="257" stroke="#dc2626" stroke-width="2" marker-end="url(#arr-red)"/>
+  <text x="700" y="350" font-family="'Segoe UI',system-ui,sans-serif" font-size="13" fill="#dc2626" text-anchor="start" dominant-baseline="middle">Continue?</text>
+
+  <!-- Footer -->
+  <text x="140" y="510" font-family="'Segoe UI',system-ui,sans-serif" font-size="13" fill="#6b7280" text-anchor="start" dominant-baseline="middle">← No tool calls / Turn limit reached → Return final result</text>
 </svg>

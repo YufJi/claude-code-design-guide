@@ -1,129 +1,64 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="840" height="520" viewBox="0 0 840 520">
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="540" viewBox="0 0 840 540">
   <defs>
-    <marker id="arr-3b82f6" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
-          <polygon points="0 0,10 3.5,0 7" fill="#3b82f6"/>
-        </marker>
-    <marker id="arr-059669" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
-          <polygon points="0 0,10 3.5,0 7" fill="#059669"/>
-        </marker>
-    <marker id="arr-f59e0b" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
-          <polygon points="0 0,10 3.5,0 7" fill="#f59e0b"/>
-        </marker>
-    <marker id="arr-dc2626" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
-          <polygon points="0 0,10 3.5,0 7" fill="#dc2626"/>
-        </marker>
-    <marker id="arr-9333ea" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
-          <polygon points="0 0,10 3.5,0 7" fill="#9333ea"/>
-        </marker>
-    <marker id="arr-1e40af" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
-          <polygon points="0 0,10 3.5,0 7" fill="#1e40af"/>
-        </marker>
-    <marker id="arr-374151" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
-          <polygon points="0 0,10 3.5,0 7" fill="#374151"/>
-        </marker>
-    <marker id="arr-94a3b8" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
-          <polygon points="0 0,10 3.5,0 7" fill="#94a3b8"/>
-        </marker>
+    <marker id="arr-blue" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0,10 3.5,0 7" fill="#3b82f6"/>
+    </marker>
+    <marker id="arr-orange" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0,10 3.5,0 7" fill="#d97706"/>
+    </marker>
+    <marker id="arr-green" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0,10 3.5,0 7" fill="#059669"/>
+    </marker>
   </defs>
-  <rect width="840" height="520" fill="white"/>
-  <text x="420" y="34"
-         font-family="'Segoe UI',system-ui,sans-serif"
-         font-size="22" font-weight="bold"
-         fill="#1e40af" text-anchor="middle"
-         dominant-baseline="middle">Auto-Compact 压缩流程</text>
-  <rect x="40" y="62" width="380" height="140" rx="10"
-       fill="#ffc9c9" stroke="#dc2626" stroke-width="2" />
-  <text x="230" y="82"
-         font-family="'Segoe UI',system-ui,sans-serif"
-         font-size="14" font-weight="600"
-         fill="#dc2626" text-anchor="middle"
-         dominant-baseline="middle">原始消息列表（255K tokens）</text>
-  <text x="230" y="108.25"
-         font-family="'Segoe UI',system-ui,sans-serif"
-         font-size="13" font-weight="normal"
-         fill="#374151" text-anchor="middle"
-         dominant-baseline="middle">系统提示 + 50 轮对话 +</text>
-  <text x="230" y="127.75"
-         font-family="'Segoe UI',system-ui,sans-serif"
-         font-size="13" font-weight="normal"
-         fill="#374151" text-anchor="middle"
-         dominant-baseline="middle">大量工具调用结果</text>
-  <text x="230" y="165"
-         font-family="'Segoe UI',system-ui,sans-serif"
-         font-size="13" font-weight="normal"
-         fill="#dc2626" text-anchor="middle"
-         dominant-baseline="middle">▲ 超出 85% 阈值，触发压缩</text>
-  <path d="M230,204 Q229.7770368454572,224 230,244"
-       fill="none" stroke="#d97706" stroke-width="2.5" 
-       marker-end="url(#arr-d97706)" />
-  <rect x="40" y="248" width="170" height="80" rx="8"
-       fill="#ffd8a8" stroke="#d97706" stroke-width="2" />
-  <text x="125" y="278.25"
-         font-family="'Segoe UI',system-ui,sans-serif"
-         font-size="13" font-weight="normal"
-         fill="#92400e" text-anchor="middle"
-         dominant-baseline="middle">待压缩部分</text>
-  <text x="125" y="297.75"
-         font-family="'Segoe UI',system-ui,sans-serif"
-         font-size="13" font-weight="normal"
-         fill="#92400e" text-anchor="middle"
-         dominant-baseline="middle">（200K tokens）</text>
-  <rect x="250" y="248" width="170" height="80" rx="8"
-       fill="#c3fae8" stroke="#059669" stroke-width="2" />
-  <text x="335" y="278.25"
-         font-family="'Segoe UI',system-ui,sans-serif"
-         font-size="13" font-weight="normal"
-         fill="#065f46" text-anchor="middle"
-         dominant-baseline="middle">保留部分</text>
-  <text x="335" y="297.75"
-         font-family="'Segoe UI',system-ui,sans-serif"
-         font-size="13" font-weight="normal"
-         fill="#065f46" text-anchor="middle"
-         dominant-baseline="middle">（最近 10 条）</text>
-  <path d="M125,330 Q125.49922271652234,350 125,370"
-       fill="none" stroke="#d97706" stroke-width="2.5" 
-       marker-end="url(#arr-d97706)" />
-  <rect x="40" y="374" width="170" height="60" rx="8"
-       fill="#d0bfff" stroke="#9333ea" stroke-width="2" />
-  <text x="125" y="394.25"
-         font-family="'Segoe UI',system-ui,sans-serif"
-         font-size="13" font-weight="normal"
-         fill="#6b21a8" text-anchor="middle"
-         dominant-baseline="middle">Claude 生成摘要</text>
-  <text x="125" y="413.75"
-         font-family="'Segoe UI',system-ui,sans-serif"
-         font-size="13" font-weight="normal"
-         fill="#6b21a8" text-anchor="middle"
-         dominant-baseline="middle">（10K tokens）</text>
-  <line x1="125" y1="436" x2="340" y2="460"
-       stroke="#3b82f6" stroke-width="2" 
-       marker-end="url(#arr-3b82f6)" />
-  <line x1="335" y1="330" x2="380" y2="460"
-       stroke="#3b82f6" stroke-width="2" 
-       marker-end="url(#arr-3b82f6)" />
-  <rect x="280" y="460" width="340" height="46" rx="10"
-       fill="#b2f2bb" stroke="#059669" stroke-width="2.5" />
-  <text x="450" y="483"
-         font-family="'Segoe UI',system-ui,sans-serif"
-         font-size="14" font-weight="600"
-         fill="#065f46" text-anchor="middle"
-         dominant-baseline="middle">压缩后消息列表（60K tokens）✓</text>
-  <rect x="470" y="62" width="340" height="120" rx="10"
-       fill="#f8fafc" stroke="#94a3b8" stroke-width="1.5" />
-  <text x="640" y="90"
-         font-family="'Segoe UI',system-ui,sans-serif"
-         font-size="15" font-weight="600"
-         fill="#374151" text-anchor="middle"
-         dominant-baseline="middle">触发阈值</text>
-  <text x="640" y="122"
-         font-family="'Segoe UI',system-ui,sans-serif"
-         font-size="14" font-weight="normal"
-         fill="#d97706" text-anchor="middle"
-         dominant-baseline="middle">85% → 显示警告</text>
-  <text x="640" y="148"
-         font-family="'Segoe UI',system-ui,sans-serif"
-         font-size="14" font-weight="normal"
-         fill="#dc2626" text-anchor="middle"
-         dominant-baseline="middle">95% → 强制压缩</text>
+  <rect width="840" height="540" fill="white"/>
+
+  <!-- Title -->
+  <text x="420" y="34" font-family="'Segoe UI',system-ui,sans-serif" font-size="22" font-weight="bold" fill="#1e40af" text-anchor="middle" dominant-baseline="middle">Auto-Compact 压缩流程</text>
+
+  <!-- Step 1: Original message list (left) -->
+  <rect x="40" y="58" width="380" height="130" rx="10" fill="#ffc9c9" stroke="#dc2626" stroke-width="2"/>
+  <text x="230" y="82" font-family="'Segoe UI',system-ui,sans-serif" font-size="14" font-weight="600" fill="#dc2626" text-anchor="middle" dominant-baseline="middle">原始消息列表（255K tokens）</text>
+  <text x="230" y="110" font-family="'Segoe UI',system-ui,sans-serif" font-size="13" fill="#374151" text-anchor="middle" dominant-baseline="middle">系统提示 + 50 轮对话 + 大量工具调用结果</text>
+  <text x="230" y="158" font-family="'Segoe UI',system-ui,sans-serif" font-size="13" fill="#dc2626" text-anchor="middle" dominant-baseline="middle">▲ 超出 85% 阈值，触发压缩</text>
+
+  <!-- Threshold box (right) -->
+  <rect x="470" y="58" width="330" height="130" rx="10" fill="#f8fafc" stroke="#94a3b8" stroke-width="1.5"/>
+  <text x="635" y="90" font-family="'Segoe UI',system-ui,sans-serif" font-size="15" font-weight="600" fill="#374151" text-anchor="middle" dominant-baseline="middle">触发阈值</text>
+  <text x="635" y="122" font-family="'Segoe UI',system-ui,sans-serif" font-size="14" fill="#d97706" text-anchor="middle" dominant-baseline="middle">85% → 显示警告</text>
+  <text x="635" y="150" font-family="'Segoe UI',system-ui,sans-serif" font-size="14" fill="#dc2626" text-anchor="middle" dominant-baseline="middle">95% → 强制压缩</text>
+
+  <!-- Arrow down: original → split -->
+  <line x1="230" y1="190" x2="230" y2="218" stroke="#d97706" stroke-width="2.5" marker-end="url(#arr-orange)"/>
+
+  <!-- Split label -->
+  <text x="230" y="212" font-family="'Segoe UI',system-ui,sans-serif" font-size="12" fill="#d97706" text-anchor="middle" dominant-baseline="middle"></text>
+
+  <!-- Step 2a: To compress (left) -->
+  <rect x="40" y="222" width="175" height="80" rx="8" fill="#ffd8a8" stroke="#d97706" stroke-width="2"/>
+  <text x="127" y="252" font-family="'Segoe UI',system-ui,sans-serif" font-size="13" font-weight="600" fill="#92400e" text-anchor="middle" dominant-baseline="middle">待压缩部分</text>
+  <text x="127" y="276" font-family="'Segoe UI',system-ui,sans-serif" font-size="13" fill="#92400e" text-anchor="middle" dominant-baseline="middle">（200K tokens）</text>
+
+  <!-- Step 2b: Keep (right) -->
+  <rect x="245" y="222" width="175" height="80" rx="8" fill="#c3fae8" stroke="#059669" stroke-width="2"/>
+  <text x="332" y="252" font-family="'Segoe UI',system-ui,sans-serif" font-size="13" font-weight="600" fill="#065f46" text-anchor="middle" dominant-baseline="middle">保留部分</text>
+  <text x="332" y="276" font-family="'Segoe UI',system-ui,sans-serif" font-size="13" fill="#065f46" text-anchor="middle" dominant-baseline="middle">（最近 10 条）</text>
+
+  <!-- Arrow: to compress → summary -->
+  <line x1="127" y1="304" x2="127" y2="332" stroke="#d97706" stroke-width="2.5" marker-end="url(#arr-orange)"/>
+
+  <!-- Step 3: Claude generates summary -->
+  <rect x="40" y="334" width="175" height="70" rx="8" fill="#d0bfff" stroke="#9333ea" stroke-width="2"/>
+  <text x="127" y="360" font-family="'Segoe UI',system-ui,sans-serif" font-size="13" font-weight="600" fill="#6b21a8" text-anchor="middle" dominant-baseline="middle">Claude 生成摘要</text>
+  <text x="127" y="384" font-family="'Segoe UI',system-ui,sans-serif" font-size="13" fill="#6b21a8" text-anchor="middle" dominant-baseline="middle">（10K tokens）</text>
+
+  <!-- Arrow: summary → result (diagonal) -->
+  <line x1="215" y1="404" x2="330" y2="458" stroke="#3b82f6" stroke-width="2" marker-end="url(#arr-blue)"/>
+
+  <!-- Arrow: keep → result (diagonal) -->
+  <line x1="332" y1="304" x2="370" y2="458" stroke="#3b82f6" stroke-width="2" marker-end="url(#arr-blue)"/>
+
+  <!-- Step 4: Result -->
+  <rect x="270" y="460" width="360" height="52" rx="10" fill="#b2f2bb" stroke="#059669" stroke-width="2.5"/>
+  <text x="450" y="486" font-family="'Segoe UI',system-ui,sans-serif" font-size="14" font-weight="600" fill="#065f46" text-anchor="middle" dominant-baseline="middle">压缩后消息列表（60K tokens）✓</text>
 </svg>

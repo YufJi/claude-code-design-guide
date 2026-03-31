@@ -1,117 +1,56 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" width="740" height="770" viewBox="0 0 740 770">
   <defs>
-    <marker id="arr-3b82f6" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
-          <polygon points="0 0,10 3.5,0 7" fill="#3b82f6"/>
-        </marker>
-    <marker id="arr-059669" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
-          <polygon points="0 0,10 3.5,0 7" fill="#059669"/>
-        </marker>
-    <marker id="arr-f59e0b" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
-          <polygon points="0 0,10 3.5,0 7" fill="#f59e0b"/>
-        </marker>
-    <marker id="arr-dc2626" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
-          <polygon points="0 0,10 3.5,0 7" fill="#dc2626"/>
-        </marker>
-    <marker id="arr-9333ea" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
-          <polygon points="0 0,10 3.5,0 7" fill="#9333ea"/>
-        </marker>
-    <marker id="arr-1e40af" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
-          <polygon points="0 0,10 3.5,0 7" fill="#1e40af"/>
-        </marker>
-    <marker id="arr-374151" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
-          <polygon points="0 0,10 3.5,0 7" fill="#374151"/>
-        </marker>
-    <marker id="arr-94a3b8" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
-          <polygon points="0 0,10 3.5,0 7" fill="#94a3b8"/>
-        </marker>
+    <marker id="arr-blue" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0,10 3.5,0 7" fill="#3b82f6"/>
+    </marker>
   </defs>
   <rect width="740" height="770" fill="white"/>
-  <text x="370" y="34"
-         font-family="'Segoe UI',system-ui,sans-serif"
-         font-size="22" font-weight="bold"
-         fill="#1e40af" text-anchor="middle"
-         dominant-baseline="middle">Query Engine Execution Flow</text>
-  <rect x="110" y="60" width="520" height="60" rx="10"
-       fill="#a5d8ff" stroke="#1e40af" stroke-width="2.5" />
-  <text x="370" y="90"
-         font-family="'Segoe UI',system-ui,sans-serif"
-         font-size="17" font-weight="600"
-         fill="#1e40af" text-anchor="middle"
-         dominant-baseline="middle">submitMessage( userInput )</text>
-  <path d="M370,122 Q369.0596836997116,142.5 370,163"
-       fill="none" stroke="#3b82f6" stroke-width="2.5" 
-       marker-end="url(#arr-3b82f6)" />
-  <rect x="110" y="165" width="520" height="75" rx="10"
-       fill="#fff3bf" stroke="#92400e" stroke-width="2.5" />
-  <text x="370" y="191.5"
-         font-family="'Segoe UI',system-ui,sans-serif"
-         font-size="17" font-weight="600"
-         fill="#92400e" text-anchor="middle"
-         dominant-baseline="middle">① Preprocess User Input</text>
-  <text x="370" y="216.5"
-         font-family="'Segoe UI',system-ui,sans-serif"
-         font-size="13" font-weight="normal"
-         fill="#374151" text-anchor="middle"
-         dominant-baseline="middle">Parse slash commands · Handle attachments · Inject memory</text>
-  <path d="M370,242 Q369.69018254631885,262.5 370,283"
-       fill="none" stroke="#3b82f6" stroke-width="2.5" 
-       marker-end="url(#arr-3b82f6)" />
-  <rect x="110" y="285" width="520" height="75" rx="10"
-       fill="#c3fae8" stroke="#065f46" stroke-width="2.5" />
-  <text x="370" y="311.5"
-         font-family="'Segoe UI',system-ui,sans-serif"
-         font-size="17" font-weight="600"
-         fill="#065f46" text-anchor="middle"
-         dominant-baseline="middle">② Build Message List</text>
-  <text x="370" y="336.5"
-         font-family="'Segoe UI',system-ui,sans-serif"
-         font-size="13" font-weight="normal"
-         fill="#374151" text-anchor="middle"
-         dominant-baseline="middle">History messages · New user message · System context</text>
-  <path d="M370,362 Q369.2427827724314,382.5 370,403"
-       fill="none" stroke="#3b82f6" stroke-width="2.5" 
-       marker-end="url(#arr-3b82f6)" />
-  <rect x="110" y="405" width="520" height="120" rx="10"
-       fill="#dbe4ff" stroke="#3730a3" stroke-width="2.5" stroke-dasharray="7,4"/>
-  <text x="370" y="447"
-         font-family="'Segoe UI',system-ui,sans-serif"
-         font-size="17" font-weight="600"
-         fill="#3730a3" text-anchor="middle"
-         dominant-baseline="middle">③ Call query() Core Loop</text>
-  <text x="370" y="479"
-         font-family="'Segoe UI',system-ui,sans-serif"
-         font-size="13" font-weight="normal"
-         fill="#374151" text-anchor="middle"
-         dominant-baseline="middle">Build system prompt → Call Claude API (streaming)</text>
-  <text x="370" y="497"
-         font-family="'Segoe UI',system-ui,sans-serif"
-         font-size="13" font-weight="normal"
-         fill="#374151" text-anchor="middle"
-         dominant-baseline="middle">Parse response → Execute tool calls → Loop until complete</text>
-  <path d="M370,527 Q368.4882384475599,550 370,573"
-       fill="none" stroke="#3b82f6" stroke-width="2.5" 
-       marker-end="url(#arr-3b82f6)" />
-  <rect x="110" y="575" width="520" height="75" rx="10"
-       fill="#d0bfff" stroke="#6b21a8" stroke-width="2.5" />
-  <text x="370" y="601.5"
-         font-family="'Segoe UI',system-ui,sans-serif"
-         font-size="17" font-weight="600"
-         fill="#6b21a8" text-anchor="middle"
-         dominant-baseline="middle">④ Post-processing</text>
-  <text x="370" y="626.5"
-         font-family="'Segoe UI',system-ui,sans-serif"
-         font-size="13" font-weight="normal"
-         fill="#374151" text-anchor="middle"
-         dominant-baseline="middle">Log tokens · Save session · Trigger hooks · Check compaction</text>
-  <path d="M370,652 Q370.64360951171153,672.5 370,693"
-       fill="none" stroke="#3b82f6" stroke-width="2.5" 
-       marker-end="url(#arr-3b82f6)" />
-  <rect x="110" y="695" width="520" height="60" rx="10"
-       fill="#b2f2bb" stroke="#14532d" stroke-width="2.5" />
-  <text x="370" y="725"
-         font-family="'Segoe UI',system-ui,sans-serif"
-         font-size="17" font-weight="600"
-         fill="#14532d" text-anchor="middle"
-         dominant-baseline="middle">⑤ Yield results to caller (streaming)</text>
+
+  <!-- Title -->
+  <text x="370" y="34" font-family="'Segoe UI',system-ui,sans-serif" font-size="22" font-weight="bold" fill="#1e40af" text-anchor="middle" dominant-baseline="middle">Query Engine Execution Flow</text>
+
+  <!-- Step 0 -->
+  <rect x="110" y="58" width="520" height="60" rx="10" fill="#a5d8ff" stroke="#1e40af" stroke-width="2.5"/>
+  <text x="370" y="88" font-family="'Segoe UI',system-ui,sans-serif" font-size="17" font-weight="600" fill="#1e40af" text-anchor="middle" dominant-baseline="middle">submitMessage( userInput )</text>
+
+  <!-- Arrow -->
+  <line x1="370" y1="120" x2="370" y2="148" stroke="#3b82f6" stroke-width="2.5" marker-end="url(#arr-blue)"/>
+
+  <!-- Step 1 -->
+  <rect x="110" y="150" width="520" height="75" rx="10" fill="#fff3bf" stroke="#92400e" stroke-width="2.5"/>
+  <text x="370" y="176" font-family="'Segoe UI',system-ui,sans-serif" font-size="17" font-weight="600" fill="#92400e" text-anchor="middle" dominant-baseline="middle">① Preprocess User Input</text>
+  <text x="370" y="202" font-family="'Segoe UI',system-ui,sans-serif" font-size="13" fill="#374151" text-anchor="middle" dominant-baseline="middle">Parse slash commands · Handle attachments · Inject memory</text>
+
+  <!-- Arrow -->
+  <line x1="370" y1="227" x2="370" y2="255" stroke="#3b82f6" stroke-width="2.5" marker-end="url(#arr-blue)"/>
+
+  <!-- Step 2 -->
+  <rect x="110" y="257" width="520" height="75" rx="10" fill="#c3fae8" stroke="#065f46" stroke-width="2.5"/>
+  <text x="370" y="283" font-family="'Segoe UI',system-ui,sans-serif" font-size="17" font-weight="600" fill="#065f46" text-anchor="middle" dominant-baseline="middle">② Build Message List</text>
+  <text x="370" y="309" font-family="'Segoe UI',system-ui,sans-serif" font-size="13" fill="#374151" text-anchor="middle" dominant-baseline="middle">History messages · New user message · System context</text>
+
+  <!-- Arrow -->
+  <line x1="370" y1="334" x2="370" y2="362" stroke="#3b82f6" stroke-width="2.5" marker-end="url(#arr-blue)"/>
+
+  <!-- Step 3 (dashed) -->
+  <rect x="110" y="364" width="520" height="120" rx="10" fill="#dbe4ff" stroke="#3730a3" stroke-width="2.5" stroke-dasharray="7,4"/>
+  <text x="370" y="400" font-family="'Segoe UI',system-ui,sans-serif" font-size="17" font-weight="600" fill="#3730a3" text-anchor="middle" dominant-baseline="middle">③ Call query() Core Loop</text>
+  <text x="370" y="432" font-family="'Segoe UI',system-ui,sans-serif" font-size="13" fill="#374151" text-anchor="middle" dominant-baseline="middle">Build system prompt → Call Claude API (streaming)</text>
+  <text x="370" y="452" font-family="'Segoe UI',system-ui,sans-serif" font-size="13" fill="#374151" text-anchor="middle" dominant-baseline="middle">Parse response → Execute tool calls → Loop until complete</text>
+
+  <!-- Arrow -->
+  <line x1="370" y1="486" x2="370" y2="514" stroke="#3b82f6" stroke-width="2.5" marker-end="url(#arr-blue)"/>
+
+  <!-- Step 4 -->
+  <rect x="110" y="516" width="520" height="75" rx="10" fill="#d0bfff" stroke="#6b21a8" stroke-width="2.5"/>
+  <text x="370" y="542" font-family="'Segoe UI',system-ui,sans-serif" font-size="17" font-weight="600" fill="#6b21a8" text-anchor="middle" dominant-baseline="middle">④ Post-processing</text>
+  <text x="370" y="568" font-family="'Segoe UI',system-ui,sans-serif" font-size="13" fill="#374151" text-anchor="middle" dominant-baseline="middle">Log tokens · Save session · Trigger hooks · Check compaction</text>
+
+  <!-- Arrow -->
+  <line x1="370" y1="593" x2="370" y2="621" stroke="#3b82f6" stroke-width="2.5" marker-end="url(#arr-blue)"/>
+
+  <!-- Step 5 -->
+  <rect x="110" y="623" width="520" height="60" rx="10" fill="#b2f2bb" stroke="#14532d" stroke-width="2.5"/>
+  <text x="370" y="653" font-family="'Segoe UI',system-ui,sans-serif" font-size="17" font-weight="600" fill="#14532d" text-anchor="middle" dominant-baseline="middle">⑤ Yield results to caller (streaming)</text>
 </svg>
