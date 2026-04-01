@@ -9,56 +9,54 @@
 
 This documentation is organized into 46 specialized directories, each containing complete analysis of a subsystem:
 
-```
-architecture/
-├── README_EN.md                  ← This file (directory and navigation)
-├── 01-系统总览/                   ← Source structure, layered architecture, module relationships
-├── 02-启动与初始化/               ← main.tsx → init → REPL complete chain
-├── 03-查询引擎/                   ← query.ts + QueryEngine.ts core loop
-├── 04-API客户端/                  ← Multi-backend, streaming, retry, error classification
-├── 05-工具系统/                   ← 40+ tool registration, orchestration, streaming execution
-├── 06-权限与安全/                 ← 6 modes, classifier, sandbox, path validation
-├── 07-上下文管理/                 ← Three-layer compression, token budget, cache control
-├── 08-MCP集成/                    ← Configuration, transport, authentication, lazy loading
-├── 09-Hooks系统/                  ← 13 event hooks + 70+ React Hooks
-├── 10-Skills系统/                 ← 17 built-in skills, skill discovery, fork execution
-├── 11-多智能体/                   ← Agent/Teammate/Remote/Dream
-├── 12-UI渲染/                     ← Ink engine, component tree, design system
-├── 13-配置体系/                   ← 5-level priority, hot reload, MDM
-├── 14-状态管理/                   ← Bootstrap singleton + Zustand Store
-├── 15-命令体系/                   ← 87+ Slash commands complete list
-├── 16-记忆系统/                   ← memdir, auto-extraction, team memory
-├── 17-错误恢复/                   ← 5-layer recovery, retention strategy, degradation
-├── 18-遥测分析/                   ← OTel, Datadog, GrowthBook, Perfetto
-├── 19-反馈与调查/                 ← Survey state machine, transcript sharing, probability gating
-├── 20-服务层/                     ← 13 background services complete analysis
-├── 21-插件系统/                   ← Discovery, installation, marketplace, policy
-├── 22-OAuth与认证/                ← PKCE, keychain, token refresh
-├── 23-LSP集成/                    ← JSON-RPC, multi-instance, extension routing
-├── 24-沙箱系统/                   ← Configuration, execution, violation detection
-├── 25-Git与GitHub/                ← Filesystem parsing, gitignore, gh CLI
-├── 26-会话管理/                   ← History, recovery, export, sharing
-├── 27-键绑定与输入/               ← 50+ actions, chords, context matching
-├── 28-Vim模式/                    ← Complete state machine, motion/operator/textobj
-├── 29-语音系统/                   ← Gating, authentication, integration
-├── 30-远程会话/                   ← CCR WebSocket, permission bridging
-├── 31-Bridge协议/                 ← 33 files, REST+WS, reliable transport
-├── 32-Buddy系统/                  ← Companion pet, PRNG, sprite rendering
-├── 33-协调器模式/                 ← Multi-Worker orchestration, task notification
-├── 34-Swarm系统/                  ← tmux/iTerm2/in-process backend, permission sync
-├── 35-Computer-Use/               ← macOS Enigo/Swift, locks, ESC hotkey
-├── 36-DeepLink/                   ← Protocol registration, terminal launch, URL parsing
-├── 37-Teleport/                   ← CCR session API, Git Bundle, environment
-├── 38-输出样式/                   ← Markdown front matter, style loading
-├── 39-原生模块/                   ← Color difference, file indexing, Yoga layout
-├── 40-迁移系统/                   ← 11 configuration migrations
-├── 41-文件持久化/                 ← BYOC file upload, mtime scanning
-├── 42-代价追踪/                   ← Model usage, session cost, formatting
-├── 43-Shell工具链/                ← Bash AST, PowerShell parsing, specs
-├── 44-Screens组件/                ← REPL, Doctor, Resume
-├── 45-类型系统/                   ← Message, permission, command, hook types
-├── 46-完整数据流图/               ← End-to-end flow, call graph, sequence diagram
-```
+| Chapter | Contents |
+|---------|----------|
+| [01 System Overview](./01-系统总览/system-overview-en.md) | Source structure, layered architecture, module relationships |
+| [02 Startup & Initialization](./02-启动与初始化/initialization-en.md) | main.tsx → init → REPL complete chain |
+| [03 Query Engine](./03-查询引擎/query-engine-en.md) | query.ts + QueryEngine.ts core loop |
+| [04 API Client](./04-API客户端/api-client-en.md) | Multi-backend, streaming, retry, error classification |
+| [05 Tool System](./05-工具系统/tool-system-en.md) | 40+ tool registration, orchestration, streaming execution |
+| [06 Permission & Security](./06-权限与安全/permission-security-en.md) | 6 modes, classifier, sandbox, path validation |
+| [07 Context Management](./07-上下文管理/context-management-en.md) | Three-layer compression, token budget, cache control |
+| [08 MCP Integration](./08-MCP集成/mcp-integration-en.md) | Configuration, transport, authentication, lazy loading |
+| [09 Hooks System](./09-Hooks系统/hooks-system-en.md) | 13 event hooks + 70+ React Hooks |
+| [10 Skills System](./10-Skills系统/skills-system-en.md) | 17 built-in skills, skill discovery, fork execution |
+| [11 Multi-Agent](./11-多智能体/multi-agent-en.md) | Agent/Teammate/Remote/Dream |
+| [12 UI Rendering](./12-UI渲染/ui-rendering-en.md) | Ink engine, component tree, design system |
+| [13 Config System](./13-配置体系/config-system-en.md) | 5-level priority, hot reload, MDM |
+| [14 State Management](./14-状态管理/state-management-en.md) | Bootstrap singleton + Zustand Store |
+| [15 Command System](./15-命令体系/command-system-en.md) | 87+ Slash commands complete list |
+| [16 Memory System](./16-记忆系统/memory-system-en.md) | memdir, auto-extraction, team memory |
+| [17 Error Recovery](./17-错误恢复/error-recovery-en.md) | 5-layer recovery, retention strategy, degradation |
+| [18 Telemetry & Analytics](./18-遥测分析/telemetry-system-en.md) | OTel, Datadog, GrowthBook, Perfetto |
+| [19 Feedback & Survey](./19-反馈与调查/feedback-system-en.md) | Survey state machine, transcript sharing, probability gating |
+| [20 Service Layer](./20-服务层/services-complete-en.md) | 13 background services complete analysis |
+| [21 Plugin System](./21-插件系统/plugin-system-en.md) | Discovery, installation, marketplace, policy |
+| [22 OAuth & Auth](./22-OAuth与认证/oauth-auth-en.md) | PKCE, keychain, token refresh |
+| [23 LSP Integration](./23-LSP集成/lsp-integration-en.md) | JSON-RPC, multi-instance, extension routing |
+| [24 Sandbox System](./24-沙箱系统/sandbox-system-en.md) | Configuration, execution, violation detection |
+| [25 Git & GitHub](./25-Git与GitHub/git-github-en.md) | Filesystem parsing, gitignore, gh CLI |
+| [26 Session Management](./26-会话管理/session-management-en.md) | History, recovery, export, sharing |
+| [27 Keybindings & Input](./27-键绑定与输入/keybinding-system-en.md) | 50+ actions, chords, context matching |
+| [28 Vim Mode](./28-Vim模式/vim-mode-en.md) | Complete state machine, motion/operator/textobj |
+| [29 Voice System](./29-语音系统/voice-system-en.md) | Gating, authentication, integration |
+| [30 Remote Session](./30-远程会话/remote-session-en.md) | CCR WebSocket, permission bridging |
+| [31 Bridge Protocol](./31-Bridge协议/bridge-protocol-en.md) | 33 files, REST+WS, reliable transport |
+| [32 Buddy System](./32-Buddy系统/buddy-system-en.md) | Companion pet, PRNG, sprite rendering |
+| [33 Coordinator Pattern](./33-协调器模式/coordinator-mode-en.md) | Multi-Worker orchestration, task notification |
+| [34 Swarm System](./34-Swarm系统/swarm-architecture-en.md) | tmux/iTerm2/in-process backend, permission sync |
+| [35 Computer Use](./35-Computer-Use/computer-use-en.md) | macOS Enigo/Swift, locks, ESC hotkey |
+| [36 DeepLink](./36-DeepLink/deeplink-system-en.md) | Protocol registration, terminal launch, URL parsing |
+| [37 Teleport](./37-Teleport/teleport-system-en.md) | CCR session API, Git Bundle, environment |
+| [38 Output Styles](./38-输出样式/output-styles-en.md) | Markdown front matter, style loading |
+| [39 Native Modules](./39-原生模块/native-modules-en.md) | Color difference, file indexing, Yoga layout |
+| [40 Migration System](./40-迁移系统/migration-system-en.md) | 11 configuration migrations |
+| [41 File Persistence](./41-文件持久化/file-persistence-en.md) | BYOC file upload, mtime scanning |
+| [42 Cost Tracking](./42-代价追踪/cost-tracking-en.md) | Model usage, session cost, formatting |
+| [43 Shell Toolchain](./43-Shell工具链/shell-toolchain-en.md) | Bash AST, PowerShell parsing, specs |
+| [44 Screens Components](./44-Screens组件/screens-components-en.md) | REPL, Doctor, Resume |
+| [45 Type System](./45-类型系统/type-system-en.md) | Message, permission, command, hook types |
+| [46 Complete Data Flow](./46-完整数据流图/complete-data-flow-en.md) | End-to-end flow, call graph, sequence diagram |
 
 ## Recommended Reading Order
 
@@ -89,3 +87,7 @@ architecture/
 | Analytics events | 50+ |
 | Configuration migrations | 11 |
 | Bundled total lines | 16,667 lines / 13MB |
+
+---
+
+[Start Reading →](./01-系统总览/system-overview-en.md)
