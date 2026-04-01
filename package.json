@@ -1,0 +1,14 @@
+{
+  "type": "module",
+  "name": "claude-code-design-guide",
+  "version": "1.0.0",
+  "description": "从互联网早期设计模型到 AI Agent 实战 —— 一本写给开发者的 Claude Code 深度解析",
+  "scripts": {
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs"
+  },
+  "devDependencies": {
+    "vitepress": "^1.6.4"
+  }
+}

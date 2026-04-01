@@ -1,0 +1,15 @@
+# Dependencies
+node_modules/
+
+# VitePress build output
+docs/.vitepress/dist
+docs/.vitepress/cache
+
+# Environment
+.env
+.env.local
+
+# OS
+.DS_Store
+*.log
+.playwright-mcp/
