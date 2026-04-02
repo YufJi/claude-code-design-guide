@@ -1,6 +1,5 @@
 # Claude Code v2.1.88 完整工程架构文档
 
-**[English](./README_EN.md) | 中文**
 
 > 基于 1884 个 TypeScript 源文件的逐文件逆向工程分析
 > 分析日期: 2026-03-31 | Build: 2026-03-30T21:59:52Z

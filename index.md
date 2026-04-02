@@ -9,9 +9,6 @@ hero:
     - theme: brand
       text: 开始阅读 →
       link: /00-preface
-    - theme: alt
-      text: GitHub
-      link: https://github.com/6551Team/claude-code-design-guide
 
 
 features:
@@ -68,6 +65,12 @@ features:
     details: Claude Code 的设计原则与未来展望，深度思考 AI 工程范式
     link: /part9/25-design-principles
     linkText: 哲学思考
+
+  - icon: 🔬
+    title: 源码架构详解
+    details: 基于1884个TypeScript文件的逐文件逆向工程分析，46个子系统完整解析
+    link: /architecture/index
+    linkText: 深入源码
 ---
 
 <style>

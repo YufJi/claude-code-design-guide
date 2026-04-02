@@ -9,9 +9,6 @@ hero:
     - theme: brand
       text: Start Reading →
       link: /en/00-preface
-    - theme: alt
-      text: GitHub
-      link: https://github.com/6551Team/claude-code-design-guide
 
 features:
   - icon: 👋
@@ -67,4 +64,10 @@ features:
     details: Claude Code design principles and future outlook, deep thinking on AI engineering paradigms
     link: /en/part9/25-design-principles
     linkText: Philosophy
+
+  - icon: 🔬
+    title: Source Code Architecture Analysis
+    details: Reverse engineering analysis of 1884 TypeScript files, complete breakdown of 46 subsystems
+    link: /en/architecture/index
+    linkText: Dive into Source Code
 ---
