@@ -216,7 +216,7 @@ claudecode/sourcecode/src/
 
 ## 3. 分层架构
 
-![6-Layer Architecture](layered-architecture.svg)
+![6-Layer Architecture](../diagrams/layered-architecture.svg)
 
 ### 设计理念：为什么采用 6 层架构而非 MVC
 

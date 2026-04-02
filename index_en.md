@@ -68,6 +68,6 @@ features:
   - icon: 🔬
     title: Source Code Architecture Analysis
     details: Reverse engineering analysis of 1884 TypeScript files, complete breakdown of 46 subsystems
-    link: /en/architecture/index
+    link: /en/architecture/README
     linkText: Dive into Source Code
 ---

@@ -69,7 +69,7 @@ features:
   - icon: 🔬
     title: 源码架构详解
     details: 基于1884个TypeScript文件的逐文件逆向工程分析，46个子系统完整解析
-    link: /architecture/index
+    link: /architecture/README
     linkText: 深入源码
 ---
 

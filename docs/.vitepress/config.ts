@@ -390,7 +390,9 @@ export default defineConfig({
   metaChunk: true,
 
   ignoreDeadLinks: [
-    
+    /_en$/,
+    /-en$/,
+    /_EN$/,
   ],
 
   rewrites: {
